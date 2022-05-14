@@ -1,11 +1,11 @@
 import cv2
-#from keras.models import load_model
+from keras.models import load_model
 from PIL import Image
 import numpy as np
 import os
 import streamlit as st
 import sys
-'''
+
 model = load_model('BrainTumor10Epochs.h5')
 type = ['jpeg', 'png', 'jpg', 'webp']
 
@@ -50,11 +50,4 @@ def main():
 		# Training page - Plot training and history
 		pass
 main()
-'''
-a = np.full((5, 5), 300)
-im = np.asarray(a)
-print(im)
-im = Image.fromarray(a, mode="RGB")
-im = np.array(im)
-input_img = np.expand_dims(im, axis=0)
-print(input_img.shape)
+
